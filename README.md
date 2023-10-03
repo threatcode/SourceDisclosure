@@ -49,10 +49,6 @@ $ python SourceDisclosure.py --urls=url.txt --threads=4 --timeout=8
 Result save in file: result/2020-02-27 07:08:54.csv
 ```
 
-#### Demo
-![screenshot-00.png](https://raw.githubusercontent.com/ThreatCode/SourceDisclosure/master/image/screenshot-00.png)
-![screenshot-01.png](https://raw.githubusercontent.com/ThreatCode/SourceDisclosure/master/image/screenshot-01.png)
-![screenshot-02.png](https://raw.githubusercontent.com/ThreatCode/SourceDisclosure/master/image/screenshot-02.png)
 
 #### TODOs
 - [x] Arguments parser.
