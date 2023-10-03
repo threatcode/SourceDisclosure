@@ -26,26 +26,26 @@ optional arguments:
 
 #### Example
 ```
-$ python SourceDisclosure.py --url=http://baidu.com --threads=4 --timeout=8
-[302]   0       3.035766        text/html; charset=iso-8859-1   http://baidu.com/_/_index.php
-[302]   0       3.038096        text/html; charset=iso-8859-1   http://baidu.com/_/__index.php.bak
+$ python SourceDisclosure.py --url=http://bing.com --threads=4 --timeout=8
+[302]   0       3.035766        text/html; charset=iso-8859-1   http://bing.com/_/_index.php
+[302]   0       3.038096        text/html; charset=iso-8859-1   http://bing.com/_/__index.php.bak
 ...
-[302]   0       0.063973        text/html; charset=iso-8859-1   http://baidu.com/_adm/_index.php
-[302]   0       0.081672        text/html; charset=iso-8859-1   http://baidu.com/_adm/_index.php.bak
+[302]   0       0.063973        text/html; charset=iso-8859-1   http://bing.com/_adm/_index.php
+[302]   0       0.081672        text/html; charset=iso-8859-1   http://bing.com/_adm/_index.php.bak
 Result save in file: result/2020-02-27 07:07:47.csv
 ```
 
 ```
 $ cat url.txt                 
-http://baidu.com/
+http://bing.com/
 http://google.com/
 
 $ python SourceDisclosure.py --urls=url.txt --threads=4 --timeout=8
-[302]   0       2.363600        text/html; charset=iso-8859-1   http://baidu.com/_/__index.php.bak
-[302]   0       0.098417        text/html; charset=iso-8859-1   http://baidu.com/_adm/__index.php.bak
+[302]   0       2.363600        text/html; charset=iso-8859-1   http://bing.com/_/__index.php.bak
+[302]   0       0.098417        text/html; charset=iso-8859-1   http://bing.com/_adm/__index.php.bak
 ...
 [302]   0       0.060524        text/html; charset=iso-8859-1   http://google.com/_adm/_index.php.bak
-[302]   0       0.075042        text/html; charset=iso-8859-1   http://baidu.com/_adm/_index.php.back
+[302]   0       0.075042        text/html; charset=iso-8859-1   http://bing.com/_adm/_index.php.back
 Result save in file: result/2020-02-27 07:08:54.csv
 ```
 
